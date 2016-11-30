@@ -5,42 +5,44 @@
 body {
     font-size: 100%;
     font-family: Helvetica; sans-serif; color: black;
-    margin-left: 60px;
-    letter-spacing: inherit
+    align-content: left;
+    letter-spacing: inherit;
     background-color:white;
+    width: 100%;
     }
 
 h1 {
     font-family: Helvetica;
     color: black;
-    font-size: 4em;
-    background: #C0C0C0; 
+    font-size: 5em;
+    background: aqua; 
     align-content: center;
-    padding: 20px;
+    padding: 0px;
     letter-spacing: 4px;
-    width: 90%;
+    width: 100%;
+    align-items: center;
+    margin: auto;
 }
 
 h2 {
-    font-family: Helvetica; sans-serif; color: black;
-    font-size: 2em;
-    background: #C0C0C0;
-    align-content: left;
-    padding: 10px;
+    font-family: Helvetica; sans-serif;
+    font-size: 3em;
+    text-align: center;
+    width: 100%;
+   
 }
 
 a:link{
     /*unvisited link*/
     text-decoration: none;
-    text-align: left;
     font-family: Helvetica; sans-serif;
-    color:orchid;
+    color:aqua;
 }
 
 a:visited{
     /*visited link*/
     text-decoration: none;
-    color:mediumslateblue;
+    color:orchid;
 }
 
 a:hover{
@@ -52,62 +54,129 @@ p {
     font-size: 100%;
     font-family: Helvetica; sans-serif;
     font-size: 1em;
+    width: 100%
     }
 
 div{
     height: 650;
-    width: 90%;
-    display: inline-block;
+    width: 100%;
+    display: inherit;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #woman {
-    width: 460px;
-    height: 650px;
+    width: 40%;
+    padding-left: 10%;
+    padding-right: -10%;
     float: left;
     display: inline-block;
-    font-family: Helvetica; sans-serif;
 }
 
 #navigation {
-    width: 50%;
-    height: 650px;
+    width: 20%;
     background color: gray;
     text-align: left;
     display: inline-block;
+    padding-bottom: 25%;
     font-family: Helvetica; sans-serif;
-    font-size: 2em
+    font-size: 2em;
 }
 
-#statement {
+#statement_text {
     width: 90%;
     text-align: left;
     font-family: Helvetica; sans-serif;
 }
 
 #paintings {
-    width: 90%;
+    width: 100%;
     text-align: center;
     font-family: Helvetica; sans-serif;
 }
 
-#table {
-    border: 1px;
-    color: black;
+#mySlides {
+    align-content: center;
+    width: auto;
+    height: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: auto;
+  max-height: auto;
+  align-content: center;
+  width: 100%;
+  margin: auto;
+  margin-left: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin-right:  2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: center;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 #resume {
-    width: 90%;
-    text-align: left;
+    width: 100%;
+    text-align: auto;
     font-family: Helvetica; sans-serif;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #contact {
     font-family: Helvetica; sans-serif; 
-    width: 90%;
-    text-align: left;
+    width: 100%;
+    text-align: center;
 }
+
+#email {
+    font-family: Helvetica;
+    text-align: left;
+    font-size: 1.5em;
+    width: 100%;
+    margin-left: 7%;
+}
+
+h3 {
+    font-family: Helvetica;
+    text-align: left;
+    font-size: 1.5em;
+    width: 100%;
+} 
 #links {
     font-family: Helvetica; sans-serif;  
-    width: 90%;
+    width: 100%;
     text-align: left;
+    margin-left: auto;  
 }
